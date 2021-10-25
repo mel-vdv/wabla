@@ -1,0 +1,28 @@
+<div class="drapeaux" *ngIf="logoVis">
+    <div *ngIf="drapeauVis"><img (click)="clicDrapeau('fr')" src="./../../../assets/fr.png" alt="drapeau"></div>
+    <div> <img (click)='clicLogo()' src="./../../../assets/logorond.png" alt="logowabla"></div>
+    <div *ngIf="drapeauVis"> <img (click)="clicDrapeau('en')" src="./../../../assets/en.png" alt="drapeau"></div>
+</div>
+<div class="cadre">
+<div class="rubriques" *ngIf="rubriqueVis">
+        <div>
+            <div><a routerLink="/produits"><img src="./../../../assets/services3.png" alt="rubrique"></a>
+           </div>  <span *ngIf="langue==='fr'">NOS SERVICES</span>
+            <span *ngIf="langue==='en'">OUR SERVICES </span>
+        </div>
+        <div><div>
+            <a routerLink="/contact"><img src="./../../../assets/contacter3.png" alt="rubrique"></a>
+           </div> <span *ngIf="langue==='fr'">NOUS CONTACTER</span>
+            <span *ngIf="langue==='en'">CONTACT US</span>
+        </div>
+        <div><div>
+            <a routerLink="/equipe"><img src="./../../../assets/equipe-logo4.png" alt="rubrique"></a>
+           </div> <span *ngIf="langue==='fr'">NOTRE EQUIPE</span>
+            <span *ngIf="langue==='en'">OUR TEAM</span>
+        </div>
+        <div><div>
+            <a routerLink="/clients"><img src="./../../../assets/custumers3.png" alt="rubrique"></a>
+            </div><span *ngIf="langue==='fr'">NOS TEMOIGNAGES</span>
+            <span *ngIf="langue==='en'">OUR TESTIMONIALS </span>  
+        </div>
+</div></div>

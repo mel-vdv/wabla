@@ -1,0 +1,80 @@
+<div class="navig">
+    <div><a routerLink="/"><img src="./../../../assets/wabla2.png" alt="wabla"></a></div>
+    <div><a routerLink="/produits"><img src="./../../../assets/services3.png" alt="navig"></a></div>
+    <div><a routerLink="/clients"><img src="./../../../assets/custumers3.png" alt="navig"></a></div>
+    <div><a routerLink="/contact"><img src="./../../../assets/contacter3.png" alt="navig"></a></div>
+</div>
+
+<div class="cadre">
+    <div class="equipe">
+        <!-- accueil -->
+        <div *ngIf="!mat && !mar" class="team">
+            <div>
+                <span>Pierre MATHIEU</span>
+                <img (click)="matVis()" (mouseover)="onMat()" (mouseout)="offMat()" src="{{ampouleMat}}" alt="mat">
+            </div>
+            <div>
+                <span>Cédric MARCHAND</span>
+                <img (click)="marVis()" (mouseover)="onMar()" (mouseout)="offMar()" src="{{ampouleMar}}" alt="mar">
+            </div>
+        </div>
+        <!-- mat -->
+        <div *ngIf="mat" class="mat">
+            <div class="nom"><p>Pierre MATHIEU</p></div>
+            <div class="ecoles">
+                <div><img src="./../../../assets/ecam.png" alt="ecam"></div>
+                <div><img src="./../../../assets/ucl.png" alt="ucl"></div>
+                <div><img src="./../../../assets/technifutur.png" alt="technifutur"></div>
+            </div>
+            <div class="fotologos">
+                                
+                
+                <div class="description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Obcaecati voluptas eveniet provident tenetur incidunt cupiditate 
+                         dicta nesciunt minima vel itaque.
+                    </p> 
+                </div>
+
+                <div class="foto"><img (click)="show()" src="./../../../assets/foto-mat.png" alt="foto">
+                </div>
+                
+                <div class="{{classeLogos}}">
+                    <div><a href="https://www.linkedin.com/in/pierre-mathieu-460b0376/" target="_blank"><img (mouseout)="lnBl()" (mouseover)="lnOr()"src="{{srcLn}}" alt="ln"></a></div>
+                    <div><img (mouseout)="twitBl()" (mouseover)="twitOr()"src="{{srcTwit}}" alt="twit"></div>
+                    <div><img (mouseout)="gitBl()" (mouseover)="gitOr()" src="{{srcGit}}" alt="git"></div>
+                    <div><a href="https://www.facebook.com/pierre.mathieu.927" target="_blank"><img  (mouseout)="fbBl()" (mouseover)="fbOr()" src="{{srcFb}}" alt="fb"></a></div>
+                    <div><a href="mailto:pierre.mathieu@gmail.com"><img (mouseout)="mailBl()" (mouseover)="mailOr()"src="{{srcMail}}" alt="mail"></a></div>
+                </div>
+            </div>
+            <div class="retour">
+                <img (click)="retour()" src="./../../../assets/retour.png" alt="retour"><span>RETOUR</span>
+            </div>
+        </div>
+        <!-- mar -->
+        <div *ngIf="mar" class="mar">
+            <div class="nom"><p>Cédric MARCHAND</p></div>
+            <div class="ecoles">
+                <div><img src="./../../../assets/ecam.png" alt="ecam"></div>
+                <div><img src="./../../../assets/ucl.png" alt="ucl"></div>
+            
+            </div>
+            <div class="fotologos">
+                <div class="foto"><img (click)="show()" src="./../../../assets/foto-mar.png" alt="foto">
+                </div>
+                <div class="{{classeLogos}}">
+                    <div><a href="https://www.linkedin.com/in/cedric-marchand-5a7b0476/" target="_blank"><img (mouseout)="lnBl()" (mouseover)="lnOr()"src="{{srcLn}}" alt="ln"></a></div>
+                    <div><img (mouseout)="twitBl()" (mouseover)="twitOr()"src="{{srcTwit}}" alt="twit"></div>
+                    <div><img (mouseout)="gitBl()" (mouseover)="gitOr()" src="{{srcGit}}" alt="git"></div>
+                    <div><a href="https://www.facebook.com/cedric.marchand.129" target="_blank"><img  (mouseout)="fbBl()" (mouseover)="fbOr()" src="{{srcFb}}" alt="fb"></a></div>
+                    <div><a href="mailto:cedric.marchand@gmail.com"><img (mouseout)="mailBl()" (mouseover)="mailOr()"src="{{srcMail}}" alt="mail"></a></div>
+                </div>
+                <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae amet at. Quas iure impedit sit qui officia, ut cumque!</div>
+            </div>
+            <div class="retour">
+                <img (click)="retour()" src="./../../../assets/retour.png" alt="retour"><span>RETOUR</span>
+            </div>
+        </div>
+
+    </div>
+</div>

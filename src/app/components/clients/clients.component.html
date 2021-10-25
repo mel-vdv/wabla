@@ -1,0 +1,49 @@
+<div class="navig">
+    <div><a routerLink="/"><img src="./../../../assets/wabla2.png" alt="wabla"></a></div>
+    <div><a routerLink="/equipe"><img src="./../../../assets/equipe-logo4.png" alt="navig"></a></div><span>notre
+        equipe</span>
+    <div><a routerLink="/produits"><img src="./../../../assets/services3.png" alt="navig"></a></div><span>nos
+        services</span>
+    <div><a routerLink="/contact"><img src="./../../../assets/contacter3.png" alt="navig"></a></div> <span>nous
+        contacter</span>
+</div>
+<div class="temoignages">
+    <div>
+        <div>
+            <span *ngIf="langue==='fr'">Chef cuisinier **, <br> Sang Hoon Degeimbre</span>
+            <span *ngIf="langue==='en'">Chef **, <br> Sang Hoon Degeimbre</span>
+        </div>
+        <div><img src="./../../../assets/chinoisbleu.png" alt="photo"></div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nam sunt ducimus mollitia praesentium, ex fugiat magnam officiis voluptatem
+            consequuntur aliquid deserunt accusamus perspiciatis a sequi quae hic quasi architecto?
+            Quod dolores soluta nostrum harum odio, ipsa ex aliquam quasi accusantium numquam sed s
+            aepe asperiores expedita!
+            <a target="_blank"
+                href="https://sosoir.lesoir.be/un-chef-belge-doublement-etoile-cree-une-boisson-sans-alcool-qui-remplace-le-vin ">
+                <img src="./../../../assets/index.png" alt="index">reportage</a>
+        </div>
+    </div>
+    <div>
+        <div>
+            <span *ngIf="langue==='fr'">PDG Invineo, <br> Thierry Tacheny</span>
+            <span *ngIf="langue==='en'">Manager Invineo, <br> Thierry Tacheny</span>
+        </div>
+        <div><img src="./../../../assets/boss-invineobleu.png" alt="photo"></div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Minus doloribus unde odit saepe molestias soluta nostrum quasi repellat, optio tempora,
+            deserunt sed sapiente cum amet vel consequuntur illo voluptate hic!
+            <a href="https://invineo.com/fr_BE/" target="_blank"><img src="./../../../assets/index.png" alt="index">
+                invineo</a>
+        </div>
+    </div>
+    <div>
+        <div>
+            <span *ngIf="langue=='fr'"> Michel Dupont, <br> un particulier</span>
+            <span *ngIf="langue=='en'"> Michel Dupont, <br> a particular</span>
+        </div>
+        <div><img *ngIf="!michel" src="./../../../assets/inconnubleu.png" alt=""></div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium voluptatibus reprehenderit
+            dignissimos, odit illum at nam officiis enim dolorem necessitatibus!</div>
+    </div>
+</div>

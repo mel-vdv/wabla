@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v30/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfIA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  * {
+      font-family: 'Comfortaa';
+      color: #ffe2c2;
+  }
+  .team, .fotologos{
+    cursor:url(./../../../assets/loupe-orange.png), default;
+}
+
+  ////////////  NAVIG
+.navig{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #011b28;
+    height: 10vh;
+}
+.navig div{
+    padding:1vh;
+}
+.navig div:hover{
+    border-radius: 50%;
+    background-color: #003049;
+}
+.navig img{
+    height: 7vh;
+    align-content: center;
+}
+/////////////////// TEAM
+.cadre{
+    background-image: url('./../../../assets/tole.png');
+    background-repeat: repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.equipe{
+    background-color: #003049;
+    height: 90vh;
+    width: 60vw;  
+    border-radius: 3vh;
+}
+.team{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.team div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.team div img{
+    height: 25vh;
+}
+.team span{
+    font-size: 3vh;
+    margin-bottom: 5vh;
+}
+//////////////////// MAT
+.mat, .mar{
+    height: 90vh;
+    width: 60vw;
+}
+//------------- nom
+.nom p{
+    text-align: center;
+    
+    font-size: 4vh;
+}
+//------------- ecoles
+.ecoles{
+    display: flex;
+    background-color: #ffe2c2;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10vh;
+    width: 45vw;
+    margin: auto;
+
+}
+.ecoles img{
+    height: 8vh;
+    
+    padding: 2vh;
+}
+//------------- photo et logos
+.fotologos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+}
+.description{
+    color: #ffe2c2;
+    letter-spacing: 0.2vh;
+    width: 30vw;
+}
+.foto img{
+    height: 30vh;
+    border: 4vh solid #011b28;
+    border-radius: 5vh;
+}
+.foto img:active{
+    border-radius: 5vh 0 0 5vh;
+}
+
+.unshow{
+    width: 0px;
+    opacity: 0;
+}
+.show{
+    width: 15vh;
+    position: relative;
+    left: -5vh;
+    top: -0.25vh;
+    height: 38vh;;
+    background-color: #011b28;
+    border-radius: 0 5vh 5vh 0;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.show div{
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.show img{
+    width: 5vh;
+}
+//------------- retour
+
+.retour img{
+    padding-left: 50vw;
+    height: 4vh;
+}
+.retour>span{
+    display: none;
+    color: #ffe2c2;
+    font-size: 2vh;
+}
+.retour>img:hover+span{
+    display: inline-block;
+}

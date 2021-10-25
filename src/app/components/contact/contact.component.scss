@@ -1,0 +1,113 @@
+//police
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v30/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfIA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  *{
+      font-family: 'Comfortaa';
+  }
+  ////////////////////////
+.error{
+    color: #bd7012;
+    font-weight: 300;
+}
+/////////// NAVIG 
+.navig{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #011b28;
+    height: 10vh;
+}
+.navig div{
+    padding:1vh;
+}
+.navig div:hover{
+    border-radius: 50%;
+    background-color: #003049;
+}
+.navig img{
+    height: 7vh;
+    align-content: center;
+}
+//////////// FORM
+.formulaire{
+    display: flex;
+    justify-content: center;
+    background-color: #003049;
+}
+form{
+    background-color: #ffe2c2;
+    margin-top:5vh;margin-bottom: 5vh;
+    display: block;
+    width: 50vw;
+    border-radius: 5vh;
+   color: #003049;
+   font-weight: bold;
+}
+form div {
+    margin-left: 15vh;
+    margin-bottom: 2vh;
+}
+/////////// 
+input, select , textarea {
+    border: 0.5px solid ochre;
+    border-radius: 15px;
+    color: #003049;
+    font-weight: bold;
+    letter-spacing: 0.2vh;
+}
+textarea{
+    height: 5vh;
+    width: 40vw;
+}
+input[name="numero"]{
+    width:5vh;
+}
+input[name="tel"], input[name="tva"]{
+    width:12vh;
+}
+input[name="nom"], input[name="prenom"], input[name="mail"], input[name="entreprise"]{
+    width:16vw;
+}
+input[name="nom"], input[name="ville"]{
+    text-transform: uppercase;
+}
+input[name="prenom"]{
+    text-transform: capitalize;
+}
+p{
+    display: inline-block;
+}
+label{
+    margin-right: 4vh;
+    margin-left: 4vh;
+    border:0.5px solid rgb(251,133,0);
+    border-radius: 2vh;
+    padding: 0.5vh;
+}
+.interets{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.interets div {
+    margin-left: 0;
+}
+input[type='checkbox']{
+    margin-bottom: 1vh;
+}
+input, select, option{ 
+    height: 2vh;
+    font-size: 1.5vh;
+    padding: 0.2vh;
+    text-align: center;
+}
+textarea{
+    font-size: 1.5vh;
+    padding: 0.8vh; 
+}

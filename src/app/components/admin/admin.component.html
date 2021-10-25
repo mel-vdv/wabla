@@ -1,0 +1,67 @@
+
+<div class="acces" *ngIf="!adminAcces">
+    <p *ngIf="visible">{{message}}</p>
+    <div> <span>identifiant:</span>
+        <input type="text" name="id" [(ngModel)]="admin.identifiant">
+     <span>mdp:</span>
+        <input type="password" name="mdp" [(ngModel)]="admin.mdp">
+        <button (click)='verifAdmin()'>VALIDER</button>
+    </div>
+</div>
+<!-- ------------------------------------------------------------------------ -->
+<div class="admin" *ngIf="adminAcces">
+    <div *ngIf="alerteSure">
+        <p>Vous êtes sur le point de supprimer le profil de {{qui}} .</p>
+        <p>Confirmez-vous cette opération irréversible?</p>
+        <button (click)='supprProfil2()'>oui</button> <button (click)='annul()'>non</button>
+    </div>
+    <p *ngIf="notif">Le profil de {{quiPrenom}} {{quiNom}} a été supprimé avec succès.</p>
+
+    <table>
+        <thead>
+            <th>inscription</th>
+            <th>identité</th>
+            <th>statut</th>
+            <th>coordonnées</th>
+            <th>besoins</th>
+            <th>note</th>
+            <th>delai</th>
+            <th>disponibilités</th>
+            <th>actions</th>
+        </thead>
+        <tbody *ngFor='let client of clients'>
+
+            <tr>
+                <td>{{client.inscription}}</td>
+                <td>{{client.prenom}} <br> {{client.nom |uppercase}} <br> ({{client.date}})</td>
+                <td *ngIf="client.statut==='particulier'"><img src="./../../../assets/particulier.png"
+                        alt="particulier"> {{client.statut}}</td>
+                <td *ngIf="client.statut==='entreprise'"><img src="./../../../assets/entreprise.png" alt="entreprise">
+                    entreprise: {{client.entreprise}} <br> TVA: {{client.tva}}</td>
+                <td><img src="./../../../assets/adresse.png" alt="localisation"> {{client.numero}}, {{client.libelle}}
+                    {{client.adresse}} <br> {{client.cp}} {{client.ville|uppercase}}</td>
+                <td>
+                    <ul *ngFor='let interet of client.interets'>
+                        <li>{{interet}}</li>
+                    </ul> 
+                </td>
+                <td> <img src="./../../../assets/note.png" alt="bulle"><span class="demande">"{{client.demande}}"</span> </td>
+                <td>
+                    <img
+                        src="./../../../assets/agenda.png" alt="agenda"> délai souhaité: <br> {{client.delai}}
+                </td>
+                <td *ngIf="client.recontact==='email'"><img src="./../../../assets/email.png" alt="email">
+                    {{client.mail}} <br>
+                    ({{client.tel}})
+                </td>
+                <td *ngIf="client.recontact==='tel'"><img src="./../../../assets/tel.png" alt="tel"> {{client.tel}} <br>
+                    <img src="./../../../assets/horaires.png" alt="horloge">{{client.horaires}} <br>
+                    ({{client.mail}})
+                </td>
+                <td> <img (click)='supprProfil1(client.prenom, client.nom)' src="./../../../assets/poubelle.png"
+                        alt="poubelle">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

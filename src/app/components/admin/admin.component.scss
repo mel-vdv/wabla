@@ -1,0 +1,83 @@
+////    POLICES //////////
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v30/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfIA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/oswald/v40/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiZQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  *{
+   //@at-root font-family: 'Oswald'; 
+    font-family: 'Comfortaa';
+  }
+
+
+///////////////////
+td,th{
+    border: #003049 solid 2px;
+    padding: 2vh;
+}
+th{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.demande{
+    color:#003049;
+    font-weight: bold;
+}
+img[alt="poubelle"]{
+    height: 4vh;
+    display: block;
+    margin:auto;
+} 
+img[alt="agenda"] ,img[alt="localisation"], img[alt="tel"], img[alt="email"], img[alt="horloge"]{
+    height: 3vh;
+
+}
+////////////////////////////
+.acces{
+    background-color: #005786;
+    border: solid 3vh #003049;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.acces span, p{
+    color: rgb(251,133,0);
+    font-size: 2vh;
+    font-weight: bold;
+    letter-spacing: 0.2vh; 
+}
+input, button{
+    height: 4vh;
+    color: rgb(251,133,0);
+    border: 2px solid rgb(251,133,0);
+    border-radius: 15px;
+    font-weight: bold;
+    letter-spacing: 0.2vh;
+    text-align: center;
+    text-transform: lowercase;
+    margin-left:3vh;
+    margin-right: 3vh;
+}
+.admin{
+    background-color: #c0e9ff;
+    border: solid 3vh #004367;
+    min-height: 90vh;
+    color: #003049;
+}
+td img {
+    height: 3vh;
+}

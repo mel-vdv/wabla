@@ -1,0 +1,79 @@
+//police
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v30/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfIA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  *{
+      font-family: 'Comfortaa';
+  }
+/////////   DRAPEAUX        ///////////////
+.drapeaux{
+    margin-top: 0;
+    background-color: #003049;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5vh solid #011b28;
+}
+img[alt='drapeau']{
+    height: 15vh;
+    box-shadow: white 0.5px 0.5px 10px ;
+    margin-left: 15vh;
+}
+img[alt='logowabla']{
+    height: 20vh;
+}
+.drapeaux div:nth-child(2) img{
+    display: none;
+}
+//////////      RUBRIQUES       ///////////////
+.cadre{
+    height: 95vh;
+    background-color: #003049;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rubriques{
+    width: 70vh;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+    flex-wrap: wrap;
+    background-color:#011b28;
+    border: 5vh #011b28 solid;
+    border-radius: 4vh;
+}
+
+.rubriques div{
+    background-color:#011b28;
+    width: 34vh;
+    height:34vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rubriques div div:hover{
+    border-radius: 50%;
+    background-color: #003049;
+}
+.rubriques div div:hover+span{
+    display: block;
+}
+span {
+    display: none;
+    color: #ffe2c2;
+    font-weight: bold;
+    font-size: 3vh;
+}
+.rubriques div img {
+    height: 15vh;
+}
